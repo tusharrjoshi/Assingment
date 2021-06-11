@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1e5592e27f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- NAVBAR SECTION  -->
+    <section class="navbar">
+        <nav>
+            <div class="left">
+                <ul>
+                    <li>
+                       <a href=""> we &our</a>
+                    </li>
+                    <li>
+                        <a href=""> concepts</a>
+                    </li>
+                    <li>
+                        <a href=""> ideas</a>
+                    </li>
+                    <li>
+                        <a href=""> concepts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <div class="logo">
+                    <h5>logo</h5>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- IMAGES SECTION -->
+    <section class="images">
+        <div class="row">
+
+            <img src="https://source.unsplash.com/260x200/?nature" onclick="openModal();currentSlide(1)" alt="">
+            <img src="https://source.unsplash.com/260x200/?,water" onclick="openModal();currentSlide(2)" alt="">
+            <img src="https://source.unsplash.com/260x200/?nature,water" onclick="openModal();currentSlide(3)" alt="">
+
+            <img src="https://source.unsplash.com/260x400/?latest" onclick="openModal();currentSlide(4)" alt="">
+            <img src="https://source.unsplash.com/520x400/?,farms" alt="">
+            <img src="https://source.unsplash.com/260x200/?nature,waterfalls" alt="">
+
+            <img src="https://source.unsplash.com/260x200/?nature" alt="">
+            <img src="https://source.unsplash.com/260x200/?,water" alt="">
+            <img src="https://source.unsplash.com/260x200/?nature,water" alt="">
+            <img src="https://source.unsplash.com/260x200/?nature,birds" alt="">
+            <img src="https://source.unsplash.com/260x200/?nature,animals" alt="">
+
+            <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+                    <div class="modal_head">
+                        <h1>THE SUMMER TALE</h1>
+                    </div>
+                    <div class="imgfirst">
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 4</div>
+                            <img src="https://source.unsplash.com/1070x400/?nature">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 4</div>
+                            <img src="https://source.unsplash.com/1070x400/?water">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 4</div>
+                            <img src="https://source.unsplash.com/1070x400/?nature,waterfalls">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 4</div>
+                            <img src="https://source.unsplash.com/1070x400/?nature,waterfalls">
+                        </div>
+                    </div>
+                    <div class="description">
+                        <div class="desc-left">
+                            <div class="overview">
+                                <h1>overview</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis eius eum placeat
+                                    similique voluptas quis sed velit accusantium dolorem, dolores numquam perferendis
+                                    distinctio aliquid, recusandae dignissimos quod saepe. Reiciendis, commodi.
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora mollitia
+                                    laboriosam consectetur eligendi nobis maxime at perferendis nulla id quis!</p>
+                            </div>
+                        </div>
+                        <div class="desc-right">
+                            <div class="client">
+                                <h1>client</h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, magni.</p>
+                            </div>
+                            <div class="url">
+                                <h1>url</h1>
+                                <p><a href="#"> www.ideas.com</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <div class="suggestion">
+                        <div class="column">
+                            <img class="demo cursor" src="https://source.unsplash.com/200x200/?ground"
+                                onclick="currentSlide(1)" alt="Nature and sunrise">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="https://source.unsplash.com/200x200/?birds"
+                                onclick="currentSlide(2)" alt="Snow">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="https://source.unsplash.com/200x200/?water"
+                                onclick="currentSlide(3)" alt="Mountains and fjords">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="https://source.unsplash.com/200x200/?nature"
+                                onclick="currentSlide(4)" alt="Northern Lights">
+                        </div>
+                    </div>
+                        <div class="modal-bottom">
+                            <h1> <a href=""> close </a></h1>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer_left">
+            <h1> <a href="#"> Privacy Policy</a></h1>
+        </div>
+        <div class="footer_right">
+            <i class="fab fa-facebook-square fa-2x"></i>
+            <i class="fab fa-linkedin-in fa-2x"></i>
+            <i class="fab fa-twitter fa-2x"></i>
+        </div>
+    </footer>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
